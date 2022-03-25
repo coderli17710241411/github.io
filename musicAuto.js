@@ -1,3 +1,4 @@
+window.onload=function(){
 var bgmusic = document.getElementById('bgmusic');
 bgmusic.addEventListener('canplay', function(){
 	this.play();
@@ -9,3 +10,5 @@ function once(){
 	bgmusic.play();
 	window.removeEventListener('touchstart', once, false);
 }
+}
+
